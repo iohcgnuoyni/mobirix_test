@@ -1,0 +1,14 @@
+<h3>mobirix games</h3>
+
+<script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.4/mobile-detect.min.js"></script>
+<script>
+  const md = new MobileDetect(window.navigator.userAgent);
+
+  if (md.is('AndroidOS')) {
+    window.location.href = 'https://play.google.com/store/apps/details?id=com.mobirix.mbbi';
+  } else if (md.is('iOS')) {
+    window.location.href = 'https://apps.apple.com/kr/app/blade-idle/id1601358675';
+  } else {
+    window.location.href = 'http://www.mobirix.net/newhome2016/kor/page/allgame.html';
+  }
+</script>
